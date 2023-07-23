@@ -2,3 +2,194 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  color: hsl(218, 22%, 67%);
+  background-color: hsl(204, 43%, 93%);
+  font-family: Karla; 
+  font-weight: 400;  
+}
+
+.main-grid{
+  display: grid;
+  background-color: white; 
+}
+
+.top-grid{
+  background-color: white; 
+  display: grid; 
+}
+
+.heading{
+  color: hsl(179, 62%, 43%);
+  font-size: 170%;
+}
+
+.sub-heading-1{
+  color: hsl(71, 73%, 54%);
+  font-size: 128%;
+}
+
+.main-paragraph{
+  font-size: 118%;
+  line-height: 25px; 
+  margin-top: 10px;
+}
+
+.monthly-subscription-container{
+  background-color: hsl(179, 62%, 43%); 
+  color: white; 
+}
+
+.sub-heading-2{
+  font-size: 128%;
+  margin-bottom: 20px;
+}
+
+.price-period-flex-container{
+  display: flex; 
+  flex-direction: row; 
+  align-items: center;
+}
+
+.price{
+  font-weight: bold; 
+  font-size: 220%; 
+  margin-right: 8px;
+}
+
+.period{
+  font-size: 110%;
+  color: rgba(255, 255, 255, 0.459); 
+  margin-left: 2px;
+}
+
+.monthly-subscription-paragraph{
+  font-size: 114%;
+  margin-top: 3px; 
+  margin-bottom: 10px;
+}
+
+
+
+.why-us-container{
+  background-color: hsla(179, 62%, 43%, 0.74); 
+  color: white; 
+}
+
+.sub-heading-3{
+  font-size: 128%;
+  margin-bottom: 25px;
+}
+
+.why-us-paragraph{
+  font-size: 100%; 
+  line-height: 18px; 
+  color: rgba(255, 255, 255, 0.747);
+}
+
+@media (min-width: 375px) and (max-width: 899px){
+  .main-grid{
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .top-grid{
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .heading{
+    font-size: 105%;
+  }
+
+  .sub-heading-1{
+    font-size: 78%;
+  }
+
+  .main-paragraph{
+    font-size: 80%;
+  }
+  .bottom-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .monthly-subscription-container{
+    padding: 1rem;
+  }
+
+  .sign-up-button{
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    font-family: Karla; 
+    color: white; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px;
+    padding: 5%;  
+  }
+
+  .why-us-container{
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 900px){
+  body{
+    font-size: 14px;
+    padding: 50px;
+  }
+
+  .centering-container{
+    width: 100vw; 
+    height: 100vhh; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .main-grid{
+    grid-template-columns: 1fr; 
+    max-width: 50%; 
+    border-radius: 10px;
+  }
+
+  .top-grid{
+    grid-template-columns: 1fr; 
+    padding: 35px 40px 30px 30px; 
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10px;
+  }
+
+  .bottom-grid{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .monthly-subscription-container{
+    padding: 30px 35px 35px; 
+    border-bottom-left-radius: 10px;
+  }
+
+  .sign-up-button{
+    width: 98%; 
+    padding: 15px; 
+    font-family: Karla; 
+    color: white; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    margin-top: 20px;
+  }
+
+  .why-us-container{
+    padding: 30px 75px 35px 35px; 
+    border-bottom-right-radius: 10px; 
+  }
+
+  .sub-heading-1{
+    margin-top: 20px;
+  }
+}
